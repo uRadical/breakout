@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Breakout
+Comment=A small Breakout game on SDL3
+Exec=breakout
+Icon=breakout
+Categories=Game;ArcadeGame;
+Terminal=false

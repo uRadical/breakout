@@ -1,0 +1,4 @@
+// Windows resource script: embeds the application icon into breakout.exe so it
+// shows in Explorer, the taskbar, and the title bar. Path is relative to this
+// file (assets/icon.ico).
+IDI_ICON1 ICON "icon.ico"

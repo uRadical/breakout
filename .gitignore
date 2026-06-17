@@ -1,0 +1,18 @@
+# Build output (CMake out-of-source build)
+/build/
+
+# Packaging staging / output
+/AppDir/
+/dist/
+*.dmg
+*.AppImage
+
+# Editor / IDE
+.idea/
+*.swp
+
+# clangd index cache
+/.cache/
+
+# macOS
+.DS_Store

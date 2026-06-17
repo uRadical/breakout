@@ -1,0 +1,27 @@
+# clang-tidy configuration. clangd runs these checks inline (on type & save).
+Checks: >
+  clang-analyzer-*,
+  bugprone-*,
+  performance-*,
+  portability-*,
+  modernize-use-nullptr,
+  modernize-use-override,
+  modernize-use-using,
+  readability-misleading-indentation,
+  readability-redundant-control-flow,
+  readability-redundant-member-init,
+  -clang-analyzer-security.insecureAPI.*,
+  -bugprone-easily-swappable-parameters,
+  -portability-avoid-pragma-once
+
+# Two checks are disabled deliberately:
+#  * bugprone-easily-swappable-parameters - the drawing/audio helpers take several
+#    adjacent float coordinates (x, y, w, h, radius, ...) by their nature; wrapping
+#    each call in a struct would hurt readability more than it helps.
+#  * portability-avoid-pragma-once - '#pragma once' is supported by every compiler
+#    this project targets and is preferred over hand-written include guards.
+
+# Only lint this project's own headers; never SDL's (avoids hundreds of
+# warnings from third-party system headers).
+HeaderFilterRegex: '(Game|Audio|Draw)\.h$'
+WarningsAsErrors: ''

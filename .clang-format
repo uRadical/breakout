@@ -1,0 +1,9 @@
+# Matches the existing book style: tabs, Allman braces.
+BasedOnStyle: LLVM
+IndentWidth: 4
+TabWidth: 4
+UseTab: ForIndentation
+BreakBeforeBraces: Allman
+ColumnLimit: 0
+AccessModifierOffset: -4
+PointerAlignment: Left
