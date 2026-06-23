@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icon.png" alt="Breakout icon" width="160">
+  <img src="assets/github_social_preview.png" alt="Breakout icon">
 </p>
 
 # Breakout
